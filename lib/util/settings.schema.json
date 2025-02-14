@@ -415,7 +415,8 @@
             "required": []
         },
         "devices": {
-            "type": "object",
+            "type": ["object", "string"],
+            "pattern": "^.*\\.ya?ml$",
             "propertyNames": {
                 "pattern": "^0x[\\d\\w]{16}$"
             },
@@ -426,7 +427,8 @@
             }
         },
         "groups": {
-            "type": "object",
+            "type": ["object", "string"],
+            "pattern": "^.*\\.ya?ml$",
             "propertyNames": {
                 "pattern": "^[\\w].*$"
             },

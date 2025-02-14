@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "propertyNames": {
+        "pattern": "^[\\w].*$"
+    },
+    "patternProperties": {
+        "^.*$": {
+            "$ref": "./settings.schema.json#/definitions/group"
+        }
+    }
+}
